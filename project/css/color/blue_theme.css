@@ -1,0 +1,31 @@
+.navbar__menu .menu__link:hover {
+    color: #009AFF;
+}
+
+.activeNav {
+    border-bottom: 5px solid #009AFF;
+}
+
+.color-option {
+    border: 2px solid #009AFF;
+}
+
+.gear-check {
+    color: #009AFF;
+}
+
+.testimonials .carousel-indicators li.active {
+    border: 2px solid #009AFF;
+}
+
+.carousel-inner span {
+    color: #009AFF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #009AFF;
+}
+
+.spa {
+    color: #009AFF;
+}

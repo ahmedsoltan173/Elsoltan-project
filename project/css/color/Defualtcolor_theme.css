@@ -1,0 +1,35 @@
+.navbar__menu .menu__link:hover {
+    color: rgb(172, 7, 7);
+}
+
+.activeNav {
+    border-bottom: 5px solid rgb(172, 7, 7);
+}
+
+.color-option {
+    border: 2px solid #ab0707;
+}
+
+.color-option ul li {
+    background: rgb(172, 7, 7);
+}
+
+.gear-check {
+    color: rgb(172, 7, 7);
+}
+
+.testimonials .carousel-indicators li.active {
+    border: 2px solid rgb(172, 7, 7);
+}
+
+.carousel-inner span {
+    color: rgb(172, 7, 7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(172, 7, 7);
+}
+
+.spa {
+    color: rgb(172, 7, 7);
+}
