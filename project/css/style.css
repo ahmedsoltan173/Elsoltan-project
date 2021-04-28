@@ -1,4 +1,4 @@
-    /*
+/*
 *
 * CSS written based on SMACSS architecture.
 * To learn more, visit: http://smacss.com/
@@ -7,519 +7,623 @@
 * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
 *
 */
-    /* ---- Base Rules ---- */
-    
-    body {
-        background: #ffffff;
-        background: rgb(238, 238, 238);
-        margin: 0px;
-        padding: 0px;
-        font-family: 'Merriweather', serif;
-        color: rgb(0, 0, 0);
-    }
-    /*Start section tool box*/
-    
-    .option-box {
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        z-index: 9999;
-    }
-    
-    .color-option {
-        float: right;
-        background-color: rgba(51, 51, 51, 0);
-        color: #fff;
-        padding-top: 10px;
-        /* width: 200px; */
-        /* border: 2px solid rgb(172, 7, 7); */
-        display: none;
-        border-radius: 20px;
-    }
-    
-    .color-option ul li {
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        margin-right: 3px;
-        border-radius: 50px;
-        cursor: pointer;
-    }
-    
-    .gear-check {
-        padding: 5px;
-        background: #f0808000;
-        /* color: rgb(172, 7, 7); */
-        cursor: pointer;
-    }
-    
-    .gear-check:hover {
-        -ms-transform: rotate(20deg);
-        /* IE 9 */
-        transform: rotate(20deg);
-    }
-    /*End section tool box*/
-    /* Typeography General*/
-    
+
+
+/* ---- Base Rules ---- */
+
+body {
+    background: #ffffff;
+    background: rgb(238, 238, 238);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Merriweather', serif;
+    color: rgb(0, 0, 0);
+}
+
+
+/*Start section tool box*/
+
+.option-box {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+}
+
+.color-option {
+    float: right;
+    background-color: rgba(51, 51, 51, 0);
+    color: #fff;
+    padding-top: 10px;
+    /* width: 200px; */
+    /* border: 2px solid rgb(172, 7, 7); */
+    display: none;
+    border-radius: 20px;
+}
+
+.color-option ul li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 3px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.gear-check {
+    padding: 5px;
+    background: #f0808000;
+    /* color: rgb(172, 7, 7); */
+    cursor: pointer;
+}
+
+.gear-check:hover {
+    -ms-transform: rotate(20deg);
+    /* IE 9 */
+    transform: rotate(20deg);
+}
+
+
+/*End section tool box*/
+
+
+/* Typeography General*/
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+}
+
+#section1 h1 {
+    font-family: 'Merriweather', serif;
+    padding: 2em 1rem;
+}
+
+@media only screen and (min-width: 35em) {
     h1 {
-        font-family: 'Merriweather', serif;
-        font-size: 3em;
+        font-size: 7em;
+        /* margin: 2em 4rem 1em; */
     }
-    
-    #section1 h1 {
-        font-family: 'Merriweather', serif;
-        padding: 2em 1rem;
-    }
-    
-    @media only screen and (min-width: 35em) {
-        h1 {
-            font-size: 7em;
-            /* margin: 2em 4rem 1em; */
-        }
-    }
-    
-    h2 {
-        font-family: 'Merriweather', serif;
-        font-size: 3em;
-        color: #000;
-    }
-    
-    p {
-        line-height: 1.6em;
-        color: #000;
-    }
-    /* ---- Layout Rules ---- */
-    /* main {
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    color: #000;
+}
+
+p {
+    line-height: 1.6em;
+    color: #000;
+}
+
+
+/* ---- Layout Rules ---- */
+
+
+/* main {
 margin: 10vh 1em 10vh;
 } */
-    /* .main-hero {
+
+
+/* .main-hero {
 min-height: 40vh;
 padding-top: 3em;
 } */
-    
-    section {
-        position: relative;
-        /* min-height: 80vh; */
-    }
-    /* ---- Module Rules ---- */
-    /* Navigation Styles*/
-    
-    .navbar__menu ul {
-        padding-left: 0;
-        margin: 0;
-        text-align: right;
-        background-color: #081030;
-    }
-    
-    .navbar__menu li {
-        display: inline-block;
-        color: #fff;
-    }
-    
-    .navbar__menu .menu__link {
-        display: block;
-        padding: 1em;
-        font-weight: bold;
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    .navbar__menu .menu__link:hover {
-        background: #fff;
-        /* color: rgb(172, 7, 7); */
-        transition: ease 0.3s all;
-    }
-    
-    .activeNav {
-        /* border-bottom: 5px solid rgb(172, 7, 7); */
-        transition: ease 0.1s;
-    }
-    /* Header Styles */
-    
-    .page__header {
-        background: #fff;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 5;
-    }
-    /* Footer Styles */
-    
-    .page__footer {
-        background: #000;
-        padding: 3em;
-        padding-bottom: 0px;
-        color: #fff;
-    }
-    
-    .page__footer p {
-        color: #fff;
-    }
-    /* ---- Theme Rules ---- */
-    /* Landing Container Styles */
-    
+
+section {
+    position: relative;
+    /* min-height: 80vh; */
+}
+
+
+/* ---- Module Rules ---- */
+
+
+/* Navigation Styles*/
+
+.navbar__menu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+    background-color: #081030;
+}
+
+.navbar__menu li {
+    display: inline-block;
+    color: #fff;
+}
+
+.navbar__menu .menu__link {
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar__menu .menu__link:hover {
+    background: #fff;
+    /* color: rgb(172, 7, 7); */
+    transition: ease 0.3s all;
+}
+
+.activeNav {
+    /* border-bottom: 5px solid rgb(172, 7, 7); */
+    transition: ease 0.1s;
+}
+
+
+/* Header Styles */
+
+.page__header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+
+/* Footer Styles */
+
+.page__footer {
+    background: #000;
+    padding: 3em;
+    padding-bottom: 0px;
+    color: #fff;
+}
+
+.page__footer p {
+    color: #fff;
+}
+
+
+/* ---- Theme Rules ---- */
+
+
+/* Landing Container Styles */
+
+.landing__container {
+    padding: 1em;
+    text-align: left;
+}
+
+@media only screen and (min-width: 35em) {
     .landing__container {
-        padding: 1em;
-        text-align: left;
+        max-width: 50em;
+        padding: 4em;
     }
-    
-    @media only screen and (min-width: 35em) {
-        .landing__container {
-            max-width: 50em;
-            padding: 4em;
-        }
-    }
-    /* section:nth-of-type(even) .landing__container {
+}
+
+
+/* section:nth-of-type(even) .landing__container {
 margin-right: 0;
 margin-left: auto;
 text-align: right;
 } */
-    /* Background Circles */
-    /* Note that background circles are created with psuedo elements before and after */
-    /* Circles appear to be random do to use of :nth-of-type psuedo class */
-    
-    section:nth-of-type(odd) .landing__container::before {
-        content: '';
-        background: rgba(255, 255, 255, 0.187);
-        position: absolute;
-        z-index: -5;
-        width: 20vh;
-        height: 20vh;
-        border-radius: 50%;
-        opacity: 0;
-        transition: ease 0.5s all;
+
+
+/* Background Circles */
+
+
+/* Note that background circles are created with psuedo elements before and after */
+
+
+/* Circles appear to be random do to use of :nth-of-type psuedo class */
+
+section:nth-of-type(odd) .landing__container::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.187);
+    position: absolute;
+    z-index: -5;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+section:nth-of-type(even) .landing__container::before {
+    content: '';
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .2) 100%);
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    z-index: -5;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+section:nth-of-type(3n) .landing__container::after {
+    content: '';
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .2) 100%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+section:nth-of-type(3n + 1) .landing__container::after {
+    content: '';
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .2) 100%);
+    position: absolute;
+    right: 20vw;
+    bottom: -5em;
+    z-index: -5;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+
+/* ---- Theme State Rules ---- */
+
+
+/* Section Active Styles */
+
+
+/* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
+
+section.your-active-class {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+section.your-active-class .landing__container::before {
+    opacity: 1;
+    animation: rotate 4s linear 0s infinite forwards;
+}
+
+section.your-active-class .landing__container::after {
+    opacity: 1;
+    animation: rotate 5s linear 0s infinite forwards reverse;
+}
+
+
+/* Section Active Styles Keyframe Animations */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg) translate(-1em) rotate(0deg);
     }
-    
-    section:nth-of-type(even) .landing__container::before {
-        content: '';
-        background: rgb(255, 255, 255);
-        background: linear-gradient(0deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .2) 100%);
-        position: absolute;
-        top: 3em;
-        right: 3em;
-        z-index: -5;
-        width: 10vh;
-        height: 10vh;
-        border-radius: 50%;
-        opacity: 0;
-        transition: ease 0.5s all;
+    to {
+        transform: rotate(360deg) translate(-1em) rotate(-360deg);
     }
-    
-    section:nth-of-type(3n) .landing__container::after {
-        content: '';
-        background: rgb(255, 255, 255);
-        background: linear-gradient(0deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .2) 100%);
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: -5;
-        width: 10vh;
-        height: 10vh;
-        border-radius: 50%;
-        opacity: 0;
-        transition: ease 0.5s all;
-    }
-    
-    section:nth-of-type(3n + 1) .landing__container::after {
-        content: '';
-        background: rgb(255, 255, 255);
-        background: linear-gradient(0deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .2) 100%);
-        position: absolute;
-        right: 20vw;
-        bottom: -5em;
-        z-index: -5;
-        width: 15vh;
-        height: 15vh;
-        border-radius: 50%;
-        opacity: 0;
-        transition: ease 0.5s all;
-    }
-    /* ---- Theme State Rules ---- */
-    /* Section Active Styles */
-    /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
-    
-    section.your-active-class {
-        background: rgb(0, 0, 0);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
-    }
-    
-    section.your-active-class .landing__container::before {
-        opacity: 1;
-        animation: rotate 4s linear 0s infinite forwards;
-    }
-    
-    section.your-active-class .landing__container::after {
-        opacity: 1;
-        animation: rotate 5s linear 0s infinite forwards reverse;
-    }
-    /* Section Active Styles Keyframe Animations */
-    
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg) translate(-1em) rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg) translate(-1em) rotate(-360deg);
-        }
-    }
-    /****************************Start Services box*********************************************/
-    
-    .price-table .price-box {
-        background: rgba(235, 235, 240, 0);
-        padding-bottom: 10px;
-        border: 1px solid rgb(235, 235, 253);
-        margin-bottom: 15px;
-        /* height: 500px; */
-        margin-bottom: 20px;
-    }
-    
-    .price-table .price-box:hover {
-        border: 1px solid #ffffff83;
-        -webkit-box-shadow: 0px 0px 34px 2px rgb(255, 255, 255);
-        -moz-box-shadow: 0px 0px 34px 2px rgb(255, 255, 255);
-        box-shadow: 0px 0px 34px 2px rgb(255, 255, 255);
-    }
-    
-    .h1 {
-        color: rgb(0, 0, 0);
-        text-shadow: -1px 3px rgba(255, 253, 253, 0.74);
-    }
-    
-    .price-table .price-box h2 {
-        margin: 5px 0 15px;
-    }
-    
-    .price-table .price-box p {
-        font-size: 36px;
-        font-weight: bold;
-        color: #6f66ee;
-        width: 100px;
-        height: 100px;
-        background: #f5f4fa;
-        border-radius: 50px;
-        line-height: 100px;
-        border: 2px solid #d9d8dd;
-        -webkit-transition-duration: 0.7s;
-        -moz-transition-duration: 0.7s;
-        -o-transition-duration: 0.7s;
-        transition-duration: 0.7s;
-    }
-    /* .price-table .price-box:hover p {
+}
+
+
+/****************************Start Services box*********************************************/
+
+.price-table .price-box {
+    background: rgba(235, 235, 240, 0);
+    padding-bottom: 10px;
+    border: 1px solid rgb(235, 235, 253);
+    margin-bottom: 15px;
+    /* height: 500px; */
+    margin-bottom: 20px;
+}
+
+.price-table .price-box:hover {
+    border: 1px solid #ffffff83;
+    -webkit-box-shadow: 0px 0px 34px 2px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 34px 2px rgb(255, 255, 255);
+    box-shadow: 0px 0px 34px 2px rgb(255, 255, 255);
+}
+
+.h1 {
+    color: rgb(0, 0, 0);
+    text-shadow: -1px 3px rgba(255, 253, 253, 0.74);
+}
+
+.price-table .price-box h2 {
+    margin: 5px 0 15px;
+}
+
+.price-table .price-box p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6f66ee;
+    width: 100px;
+    height: 100px;
+    background: #f5f4fa;
+    border-radius: 50px;
+    line-height: 100px;
+    border: 2px solid #d9d8dd;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+
+
+/* .price-table .price-box:hover p {
 border: 2px solid black;
 -webkit-transform: scale(1.1, 1.1) rotate(360deg);
 -moz-transform: scale(1.1, 1.1) rotate(360deg);
 -o-transform: scale(1.1, 1.1) rotate(360deg);
 transform: scale(1.1, 1.1) rotate(360deg);
 } */
-    
-    .price-table .price-box a {
-        margin-bottom: 15px;
+
+.price-table .price-box a {
+    margin-bottom: 15px;
+}
+
+
+/****************************End Services box*********************************************/
+
+
+/*************************start Carousel**********************/
+
+.testimonials .carousel-indicators {
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    padding-top: 10px;
+}
+
+.testimonials .carousel-indicators li {
+    text-indent: 0;
+    width: 80px;
+    height: 80px;
+    opacity: .5;
+    border: 2px solid white;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 6px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.testimonials .carousel-indicators li img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.testimonials .carousel-indicators li.active {
+    opacity: 1;
+    /* border: 2px solid rgb(172, 7, 7); */
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+img {
+    max-height: 633px;
+}
+
+
+/*************************End Carousel**********************/
+
+
+/*Form style*/
+
+.form-controls {
+    width: 100%;
+}
+
+
+/*/*text area*/
+
+.text {
+    background-color: #000;
+    color: #dfdfdf;
+    border-top: 0px;
+    border-bottom: 1px solid #67d1f1;
+    border-left: 0px;
+    border-right: 1px;
+    border-radius: 50px;
+}
+
+.details p {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.details h3 {
+    margin: 20px 0;
+    font-weight: bold;
+    color: rgba(124, 3, 3, 0.733);
+}
+
+.h33,
+.h22 {
+    color: rgb(39, 39, 39);
+}
+
+.liport {
+    list-style-type: none;
+}
+
+.liport li {
+    color: #000000de;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+/*pricebox*/
+
+.carousel-inner span {
+    font-size: 3vw;
+    /* color: rgb(172, 7, 7); */
+    margin-top: 0px;
+    /* text-shadow: -3px 2px hsl(0, 0%, 100%); */
+    font-weight: bold;
+}
+
+.item h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.lead {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+/*portfolo image*/
+
+.imga {
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    height: auto;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #011870;
+    border-radius: 0 0 70% 0;
+}
+
+.imgaa {
+    visibility: hidden;
+    display: block;
+    display: none;
+}
+
+#headerh1 {
+    position: relative;
+    bottom: 9%;
+    font-size: 10vw;
+    color: #fffafa;
+    margin-top: 0px;
+    text-shadow: -10px 5px 6px rgb(0, 0, 0);
+}
+
+
+/*Scroll bar*/
+
+
+/* width */
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgba(0, 13, 60, 1);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+
+/* ::-webkit-scrollbar-thumb:hover {
+background: rgb(172, 7, 7);
+} */
+
+.pp {
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.aaa {
+    padding: 0px;
+}
+
+.ulfooter li {
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.ulfooter {
+    position: relative;
+    text-align: center;
+}
+
+.foot {
+    position: relative;
+    text-align: center;
+    bottom: 10px;
+}
+
+
+/*Portfolio Gallery */
+
+.thumbnails img {
+    height: 80px;
+    border: 4px solid #555;
+    padding: 1px;
+    margin: 0 10px 10px 0;
+}
+
+.thumbnails img:hover {
+    border: 4px solid #ab0707;
+}
+
+.preview img {
+    border: 4px solid #444;
+    padding: 1px;
+    width: 50%;
+}
+
+
+/*Media Query*/
+
+@media only screen and (max-width:700px) {
+    #section {
+        height: 50px;
     }
-    /****************************End Services box*********************************************/
-    /*************************start Carousel**********************/
-    
-    .testimonials .carousel-indicators {
-        position: static;
-        width: 100%;
-        margin-left: auto;
-        padding-top: 10px;
-    }
-    
-    .testimonials .carousel-indicators li {
-        text-indent: 0;
-        width: 80px;
-        height: 80px;
-        opacity: .5;
-        border: 2px solid white;
-        border-radius: 50px;
-        overflow: hidden;
-        margin: 6px;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    
-    .testimonials .carousel-indicators li img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
-    .testimonials .carousel-indicators li.active {
-        opacity: 1;
-        /* border: 2px solid rgb(172, 7, 7); */
-        border-radius: 50px;
-        overflow: hidden;
-    }
-    
-    img {
-        max-height: 633px;
-    }
-    /*************************End Carousel**********************/
-    /*Form style*/
-    
-    .form-controls {
-        width: 100%;
-    }
-    /*/*text area*/
-    
-    .text {
-        background-color: #000;
-        color: #dfdfdf;
-        border-top: 0px;
-        border-bottom: 1px solid #67d1f1;
-        border-left: 0px;
-        border-right: 1px;
-        border-radius: 50px;
-    }
-    
-    .details p {
-        margin: 20px 0;
-        font-weight: bold;
-        font-size: 18px;
-        color: rgb(0, 0, 0);
-    }
-    
-    .details h3 {
-        margin: 20px 0;
-        font-weight: bold;
-        color: rgba(124, 3, 3, 0.733);
-    }
-    
-    .h33,
-    .h22 {
-        color: rgb(39, 39, 39);
-    }
-    
-    .liport {
-        list-style-type: none;
-    }
-    
-    .liport li {
-        color: #000000de;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 18px;
-    }
-    /*pricebox*/
-    
-    .carousel-inner span {
-        font-size: 3vw;
-        /* color: rgb(172, 7, 7); */
-        margin-top: 0px;
-        /* text-shadow: -3px 2px hsl(0, 0%, 100%); */
-        font-weight: bold;
-    }
-    
-    .item h2 {
-        font-size: 30px;
-        font-weight: bold;
-        color: #000;
-    }
-    
-    .lead {
-        font-size: 20px;
-        font-weight: bold;
-        color: #000;
-    }
-    /*portfolo image*/
-    
-    .imga {
-        width: 80%;
-        position: absolute;
-        right: 0px;
-        height: auto;
-        border-radius: 50%;
-    }
-    
     .imgaa {
+        visibility: visible;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 3px;
+        bottom: 166px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        display: block;
+        border-bottom: 3px solid #011870;
+        border-radius: 0 0 70% 0;
+    }
+    .imga {
         visibility: hidden;
         display: block;
         display: none;
     }
-    
     #headerh1 {
-        position: relative;
-        bottom: 9%;
-        font-size: 10vw;
-        color: #fffafa;
-        margin-top: 0px;
-        text-shadow: -10px 5px 6px rgb(0, 0, 0);
+        text-shadow: -5px 5px 6px rgb(0, 0, 0);
     }
-    
-    @media only screen and (max-width:700px) {
-        #section {
-            height: 50px;
-        }
-        .imgaa {
-            visibility: visible;
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            right: 3px;
-            bottom: 166px;
-            margin-bottom: 10px;
-            border-radius: 50%;
-            display: block;
-        }
-        .imga {
-            visibility: hidden;
-            display: block;
-            display: none;
-        }
-        #headerh1 {
-            text-shadow: -5px 5px 6px rgb(0, 0, 0);
-        }
-        .carousel-inner span {
-            font-size: 9vw;
-        }
+    .carousel-inner span {
+        font-size: 9vw;
     }
-    /*Scroll bar*/
-    /* width */
-    
-     ::-webkit-scrollbar {
-        width: 10px;
-    }
-    /* Track */
-    
-     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px rgb(0, 0, 0);
-        border-radius: 10px;
-    }
-    /* Handle */
-    
-     ::-webkit-scrollbar-thumb {
-        background: rgba(0, 13, 60, 1);
-        border-radius: 10px;
-    }
-    /* Handle on hover */
-    /* ::-webkit-scrollbar-thumb:hover {
-background: rgb(172, 7, 7);
-} */
-    
-    .pp {
+    .preview img {
+        border: 4px solid #444;
+        padding: 1px;
         width: 100%;
-        height: 100px;
-        margin: 0px;
-        padding: 0px;
     }
-    
-    .aaa {
-        padding: 0px;
-    }
-    
-    .ulfooter li {
-        display: inline-block;
-        margin-left: 5%;
-    }
-    
-    .ulfooter {
-        position: relative;
-        text-align: center;
-    }
-    
-    .foot {
-        position: relative;
-        text-align: center;
-        bottom: 10px;
-    }
+}
